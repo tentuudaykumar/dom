@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+            display: flex;
+            flex-direction:row;
+            border: 2px solid black;
+             width: 500px;
+             height: 50px;
+        }
+        .c1{
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="a1"></h1>
+    <script>
+        document.getElementById("a1").innerHTML="hiiii";
+    </script> -->
+    <div class="b1">
+        <button onclick="list()"style="width:50% ;">list</button>
+        <button onclick="listitems()" style="width:50% ;">list items</button>
+    </div>
+    <div class="c1" id="c1">
+    </div>
+    <script>
+        function list(){
+       var a= document.getElementById("c1")
+       a.style.backgroundColor="blue";
+       a.innerHTML="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut nesciunt esse repellendus atque, quibusdam obcaecati fuga quod exercitationem ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut nesciunt esse repellendus atque, quibusdam obcaecati fuga quod exercitationem ipsum?</p>";
+       a.style.color="white";
+        }
+        function listitems(){
+          var b=  document.getElementById("c1")
+          b.style.backgroundColor="green" ;
+          b.innerHTML="<p>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.</p>";
+          b.style.color="white";
+        }
+     </script>
+</body>
+</html>
